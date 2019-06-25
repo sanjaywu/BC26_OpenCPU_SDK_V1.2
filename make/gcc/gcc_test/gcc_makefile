@@ -1,0 +1,154 @@
+##==========================================================================
+ #                   Quectel OpenCPU
+ #
+ #              Copyright(c) 2012-2013 Quectel Ltd. All rights reserved.
+ #
+ #--------------------------------------------------------------------------
+ # File Description
+ # ----------------
+ #      OpenCPU makefile for GCC.
+ #
+ #--------------------------------------------------------------------------
+ #==========================================================================
+
+#-------------------------------------------------------------------------------
+# Configure GCC installation path, and GCC version.
+# To execute "arm-none-eabi-gcc -v" in command line can get the current gcc version 
+#-------------------------------------------------------------------------------
+GCC_INSTALL_PATH=C:\Program Files\CodeSourcery\Sourcery_CodeBench_Lite_for_ARM_EABI
+GCC_VERSION=4.7.2
+option=$(OPTION)
+
+#api_test atc_pipe file_stress fota_stress\fota_ftp fota_stress\fota_http secure_data simple_tcp tcp_stress voice_sms watchdog
+#atc_pipe file_stress fota_stress\fota_ftp fota_stress\fota_http simple_tcp tcp_stress bluetooth audio
+
+ifeq ($(strip $(option)),)
+C_PREDEF=-D __ATC_PIPE__
+else ifeq ($(strip $(option)),api_test)
+C_PREDEF=-D __API_TEST__
+else ifeq ($(strip $(option)),atc_pipe)
+C_PREDEF=-D __ATC_PIPE__
+else ifeq ($(strip $(option)),file_stress)
+C_PREDEF=-D __FILE_STRESS__
+else ifeq ($(strip $(option)),fota_stress\fota_ftp)
+C_PREDEF=-D __FOTA_STRESS_FTP__
+else ifeq ($(strip $(option)),fota_stress\fota_http)
+C_PREDEF=-D __FOTA_STRESS_HTTP__
+else ifeq ($(strip $(option)),secure_data)
+C_PREDEF=-D __SECURE_DATA__
+else ifeq ($(strip $(option)),simple_tcp)
+C_PREDEF=-D __SIMPLE_TCPIP_TEST__
+else ifeq ($(strip $(option)),tcp_stress)
+C_PREDEF=-D __TCP_STRESS__
+else ifeq ($(strip $(option)),voice_sms)
+C_PREDEF=-D __TEST_VOICE_SMS__
+else ifeq ($(strip $(option)),watchdog)
+C_PREDEF=-D __WATCHDOG_TEST__
+else ifeq ($(strip $(option)),audio)
+C_PREDEF=-D __EXAMPLE_AUDIO__
+else ifeq ($(strip $(option)),bluetooth)
+C_PREDEF=-D __EXAMPLE_BLUETOOTH__
+endif
+
+
+#-------------------------------------------------------------------------------
+# Configure version and out target
+#-------------------------------------------------------------------------------
+PLATFORM = APPGS3MD
+MEMORY   = M32
+VERSION  = A01
+TARGET   = $(strip $(PLATFORM))$(strip $(MEMORY))$(strip $(VERSION))
+
+#-------------------------------------------------------------------------------
+# Configure the include directories
+#-------------------------------------------------------------------------------
+INCS =  -I $(ENV_INC) 
+INCS += -I ./           	\
+        -I include      	\
+        -I ril/inc      	\
+        -I custom/config   	\
+        -I custom/fota/inc 	\
+        -I test/web/inc    	\
+        -I sdk_lib/inc		
+		
+
+
+#-------------------------------------------------------------------------------
+# Configure source code dirctories
+#-------------------------------------------------------------------------------
+SRC_DIRS=example    \
+		 custom     \
+		 custom\config     \
+         custom\fota\src   \
+		 ril\src    \
+		 test\web        \
+		 test\web\src    \
+		 test\atc_pipe  \
+		 test\api_test  \
+		 test\voice_sms \
+		 test\file_stress  \
+		 test\fota_stress  \
+		 test\tcp_stress \
+		 test\simple_tcp \
+		 test\watchdog \
+		 test\secure_data \
+		 sdk_lib\src     \ 
+
+
+#-------------------------------------------------------------------------------
+# Configure source code files to compile in the source code directories
+#-------------------------------------------------------------------------------
+SRC_SYS=$(wildcard custom/config/*.c)
+SRC_SYS_RIL=$(wildcard ril/src/*.c)
+SRC_EXAMPLE=$(wildcard example/*.c)
+SRC_CUS=$(wildcard custom/*.c)
+SRC_FOTA=$(wildcard custom/fota/src/*.c)
+SRC_LIB_ASM=$(wildcard sdk_lib/src/ocpu_init.S)
+SRC_LIB_C=$(wildcard sdk_lib/src/*.c)
+SRC_TEST1=$(wildcard test/atc_pipe/*.c)
+SRC_TEST2=$(wildcard test/api_test/*.c)
+SRC_TEST3=$(wildcard test/voice_sms/*.c)
+SRC_TEST4=$(wildcard test/file_stress/*.c)
+SRC_TEST5=$(wildcard test/fota_stress/*.c)
+SRC_TEST6=$(wildcard test/tcp_stress/*.c)
+SRC_TEST7=$(wildcard test/web/*.c)
+SRC_TEST8=$(wildcard test/web/src/*.c)
+SRC_TEST10=$(wildcard test/simple_tcp/*.c)
+SRC_TEST11=$(wildcard test/watchdog/*.c)
+SRC_TEST12=$(wildcard test/secure_data/*.c)
+
+	 
+OBJS=\
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_SYS))        \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_SYS_RIL))    \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_EXAMPLE))    \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_CUS))        \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_FOTA))      \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_TEST1))      \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_TEST2))      \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_TEST3))      \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_TEST4))      \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_TEST5))      \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_TEST6))      \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_TEST7))      \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_TEST8))      \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_TEST10))      \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_TEST11))      \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_TEST12))      \
+	 $(patsubst %.S, $(OBJ_DIR)/%.o, $(SRC_LIB_ASM))    \
+	 $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_LIB_C))		\
+
+#-------------------------------------------------------------------------------
+# Configure user reference library
+#-------------------------------------------------------------------------------
+USERLIB=
+#libs/gcc/app_start.lib
+
+.PHONY: all
+all:
+#	$(warning <-- make all, C_PREDEF=$(C_PREDEF) -->)
+	@$(MAKE) new -f make/gcc/gcc_test/gcc_makefile
+
+include make\gcc\gcc_test\gcc_makefiledef
+
+export GCC_INSTALL_PATH C_PREDEF OBJS USERLIB SRC_DIRS

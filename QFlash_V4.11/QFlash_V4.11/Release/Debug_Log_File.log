@@ -1,0 +1,944 @@
+2019-4-1_9:43:15 <--> Wait port(71) is normal...
+2019-4-1_9:43:20 <--> Get Port Pass
+2019-4-1_9:43:23 <--> DM 71
+2019-4-1_9:43:23 <--> Switch EDL mode(Port71) ......
+2019-4-1_9:43:23 <--> Open Port71 ......
+2019-4-1_9:43:23 <--> Send edl mode cmd(Port71) .....
+2019-4-1_9:43:23 <--> Send_EDL_Mode Pass
+2019-4-1_9:43:23 <--> Close DM Port
+2019-4-1_9:43:24 <--> Wait DM Port normal exist...
+2019-4-1_9:43:24 <--> DM Port not exist
+2019-4-1_9:43:27 <--> Get Port160-1 Pass
+2019-4-1_9:43:27 <--> Wait port(160) is normal...
+2019-4-1_9:43:32 <--> Get Port Pass
+2019-4-1_9:43:35 <--> QDLoader 160
+2019-4-1_9:43:35 <--> EDL port 160
+2019-4-1_9:43:35 <--> Download firehose file ......
+2019-4-1_9:43:35 <--> cmd.exe /c D:\2_Code\QFlash_V4.11.1\Release\QCMM\CH1\QSaharaServer.exe -p \\.\COM160 -s 13:"D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\prog_nand_firehose_9x07.mbn"
+2019-4-1_9:43:35 <--> DL-Firehose Binary build date: Apr 27 2018 @ 03:04:33
+2019-4-1_9:43:35 <--> DL-Firehose QSAHARASERVER CALLED LIKE THIS: 'D:\2_Code\QFlash_V4.11.1\Release\QCMM\CH1\QSaharaServer.ex'Current working dir: D:\2_Code\QFlash_V4.11.1\Release
+2019-4-1_9:43:35 <--> DL-Firehose Sahara mappings:
+2019-4-1_9:43:35 <--> DL-Firehose 2: amss.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 6: apps.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 8: dsp1.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 10: dbl.m
+2019-4-1_9:43:35 <--> DL-Firehose bn
+2019-4-1_9:43:35 <--> DL-Firehose 11: osbl.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 12: dsp2.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 16: efs1.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 17: efs2.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 20: efs3.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 21: sbl1.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 22: sbl2.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 23: rpm.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 25: tz.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 28: dsp3.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 29: acdb.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 30: wdt.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 31: mba.mbn
+2019-4-1_9:43:35 <--> DL-Firehose 13: D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_facto
+2019-4-1_9:43:35 <--> DL-Firehose ry\update\firehose\prog_nand_firehose_9x07.mbn
+2019-4-1_9:43:36 <--> DL-Firehose 09:43:35: Requested ID 13, file: "D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\prog_nand_firehose_9x07.mbn"
+2019-4-1_9:43:36 <--> DL-Firehose 09:43:35: 124360 bytes transferred in 0.063000 sec
+2019-4-1_9:43:36 <--> DL-Firehose onds (1.8825MBps)
+2019-4-1_9:43:36 <--> DL-Firehose 09:43:35: File transferred successfully
+2019-4-1_9:43:36 <--> DL-Firehose NOTE: Target requested image 13 which is DeviceProgrammer. Forcing QUIT. This is by design, ** All is well ** SUCCESS!!
+2019-4-1_9:43:36 <--> DL-Firehose 09:43:35: Sahara protocol completed
+2019-4-1_9:43:36 <--> DL-Firehose, wait for 3 seconds ......
+2019-4-1_9:43:37 <--> DL-Firehose, wait for 2 seconds ......
+2019-4-1_9:43:38 <--> DL-Firehose, wait for 1 seconds ......
+2019-4-1_9:43:39 <--> Download rawprogram file ......
+2019-4-1_9:43:39 <--> cmd.exe /c D:\2_Code\QFlash_V4.11.1\Release\QCMM\CH1\fh_loader.exe --port=\\.\COM160 --sendxml=rawprogram_nand_p4K_b256K_factory.xml --search_path="D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose" --noprompt --showpercentagecomplete --zlpawarehost=1 --memoryname=eMMC
+2019-4-1_9:43:40 <--> 
+Base Version: 18.02.16.18.26
+Binary build date: Apr 27 2018 @ 03:04:29
+Incremental Build version: 18.04.27.03.04.29
+
+09:43:39: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+D:\2_Code\QFlash_V4.11.1\Re
+2019-4-1_9:43:40 <--> lease\QCMM\CH1\fh_loader.exe --port=\\.\COM160 --sendxml=rawprogram_nand_p4K_b256K_factory.xml --search_path=D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose --noprompt --showpercentagecomplete --zlpawarehost=1 --me
+2019-4-1_9:43:40 <--> moryname=eMMC 
+************************************************
+
+09:43:39: INFO: Current working dir (cwd): D:\2_Code\QFlash_V4.11.1\Release\
+09:43:39: INFO: Showing network mappings to allow debugging
+09:43:39: INFO: 
+
+
+
+09:43:39: INFO: Trying to
+2019-4-1_9:43:40 <-->  store 'rawprogram_nand_p4K_b256K_factory.xml' in string table
+09:43:39: INFO: Looking for file 'rawprogram_nand_p4K_b256K_factory.xml'
+09:43:39: INFO: User wants to talk to port '\\.\COM160'
+09:43:39: INFO: Took       0.00000000 seconds to open port
+0
+2019-4-1_9:43:40 <--> 9:43:39: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+09:43:39: INFO: If  you don't want this, use --dontsorttags
+
+09:43:39: INFO: Looking for file 'partition_complete_p4K_b256K.mbn'
+09:43:39: INFO: SectorSizeInByt
+2019-4-1_9:43:40 <--> es changed to 4096
+09:43:39: INFO: Looking for file '..\cefs.mbn'
+09:43:39: INFO: Looking for file '..\tz.mbn'
+09:43:39: INFO: Looking for file '..\rpm.mbn'
+09:43:39: INFO: Looking for file '..\appsboot.mbn'
+09:43:39: INFO: Looking for file '..\mdm960
+2019-4-1_9:43:40 <--> 7-perf-boot.img'
+09:43:39: INFO: Looking for file '..\mdm9607-perf-boot.img'
+09:43:39: INFO: Looking for file '..\mdm-perf-recovery-image-mdm9607-perf.ubi'
+09:43:39: INFO: Looking for file '..\NON-HLOS.ubi'
+09:43:39: INFO: Looking for file '..\mdm-perf
+2019-4-1_9:43:40 <--> -recovery-image-mdm9607-perf.ubi'
+09:43:39: INFO: Looking for file '..\NON-HLOS.ubi'
+09:43:39: INFO: Looking for file '..\mdm9607-perf-sysfs.ubi'
+09:43:39: INFO: Looking for file '..\mdm9607-perf-sysfs.ubi'
+09:43:39: INFO: Looking for file '..\sbl1.mbn
+2019-4-1_9:43:40 <--> '
+09:43:39: INFO: 
+
+Total to be tansferd with <program> or <read> is 211.81 MB
+
+
+09:43:39: INFO: Sending <configure>
+
+09:43:39: INFO: TARGET SAID: 'Supported Functions: program configure power benchmark read getstorageinfo erase nop '
+09:43:39: IN
+2019-4-1_9:43:40 <--> FO: fh.attrs.MaxPayloadSizeToTargetInBytes = 16384
+09:43:39: INFO: fh.attrs.MaxPayloadSizeToTargetInBytesSupported = 16384
+09:43:39: INFO: Target returned NAK for your <configure> but it does not seem to be an error. This is ok, fh_loader.exe attributes 
+2019-4-1_9:43:40 <--> updated
+09:43:39: INFO:                         Issuing Erase                       
+09:43:39: INFO:  _____              _               _____                   
+09:43:39: INFO: |_   _|            (_)             |  ___|                  
+09:43:39: INF
+2019-4-1_9:43:40 <--> O:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+09:43:39: INFO:   | |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+09:43:39: INFO:  _| |\__ \__ \ |_| | | | | | (_| | | |__| | | (_| \__ \  __/
+09:43:39: INFO:  \___/___/___/\__,_
+2019-4-1_9:43:40 <--> |_|_| |_|\__, | \____/_|  \__,_|___/\___|
+09:43:39: INFO:                              __/ |                          
+09:43:39: INFO:                             |___/ 
+
+
+
+09:43:40: INFO: TARGET SAID: 'start_sector = 0 and num_partition_sectors =0x2
+2019-4-1_9:43:40 <--> 80)'
+09:43:40: INFO: 
+
+
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+
+
+09:43:40: INFO:                         Issuing Erase                       
+09:43:40: INFO:  _____              _       
+2019-4-1_9:43:40 <-->         _____                   
+09:43:40: INFO: |_   _|            (_)             |  ___|                  
+09:43:40: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+09:43:40: INFO:   | |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` 
+2019-4-1_9:43:40 <--> / __|/ _ \
+09:43:40: INFO:  _| |\__ \__ \ |_| | | | | | (_| | | |__| | | (_| \__ \  __/
+09:43:40: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+09:43:40: INFO:                              __/ |                          
+09:43:40: 
+2019-4-1_9:43:40 <--> INFO:                             |___/ 
+
+
+
+09:43:40: INFO: TARGET SAID: 'star
+2019-4-1_9:43:40 <--> t_sector = 640 and num_partition_sectors =0x280)'
+09:43:40: INFO: 
+
+
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+
+
+09:43:40: INFO:                         Issuing Erase                       
+2019-4-1_9:43:40 <--> 
+09:43:40: INFO:  _____              _               _____                   
+09:43:40: INFO: |_   _|            (_)             |  ___|                  
+09:43:40: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+09:43:40: INFO:   | |
+2019-4-1_9:43:40 <--> / __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+09:43:40: INFO:  _| |\__ \__ \ |_| | | | | | (_| | | |__| | | (_| \__ \  __/
+09:43:40: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+09:43:40: INFO:                            
+2019-4-1_9:43:40 <-->   __/ |                          
+09:43:40: INFO:                             |___/ 
+
+
+
+09:43:40: INFO: TARGET SAID: 'start_sector = 1280 and num_partition_sectors =0x1600)'
+09:43:40: INFO: 
+
+
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERAS
+2019-4-1_9:43:40 <--> E SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+
+
+09:43:40: INFO:                         Issuing Erase                       
+09:43:40: INFO:  _____              _               _____                   
+09:43:40: INFO: |_   _|            (_)          
+2019-4-1_9:43:40 <-->    |  ___|                  
+09:43:40: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+09:43:40: INFO:   | |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+09:43:40: INFO:  _| |\__ \__ \ |_| | | | | | (_| | | |__| | | (_| \__ 
+2019-4-1_9:43:40 <--> \  __/
+09:43:40: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+09:43:40: INFO:                              __/ |                          
+09:43:40: INFO:                             |___/ 
+
+
+
+09:43:40: INFO: TARGET SAID: 'star
+2019-4-1_9:43:40 <--> t_sector = 8960 and num_partition_sectors =0x140)'
+09:43:40: INFO: 
+
+
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+
+
+09:43:40: INFO:                         Issuing Erase                       
+2019-4-1_9:43:40 <--> 
+09:43:40: INFO:  _____              _               _____                   
+09:43:40: INFO: |_   _|            (_)             |  ___|                  
+09:43:40: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+09:43:40: INFO:   | 
+2019-4-1_9:43:40 <--> |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+09:43:40: INFO:  _| |\__ \__ \ |_| | | | | | (_| | | |__| | | (_| \__ \  __/
+09:43:40: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+09:43:40: INFO:                           
+2019-4-1_9:43:40 <-->    __/ |                          
+09:43:40: INFO:                             |___/ 
+
+
+
+09:43:40: INFO: TARGET SAID: 'start_sector = 9280 and num_partition_sectors =0x180)'
+09:43:40: INFO: 
+
+
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERAS
+2019-4-1_9:43:40 <--> E SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+
+
+09:43:40: INFO:                         Issuing Erase                       
+09:43:40: INFO:  _____              _               _____                   
+09:43:40: INFO: |_   _|            (_)          
+2019-4-1_9:43:40 <-->    |  ___|                  
+09:43:40: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+09:43:40: INFO:   | |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+09:43:40: INFO:  _| |\__ \__ \ |_| | | | | | (_| | | |__| | | (_| \__ 
+2019-4-1_9:43:40 <--> \  __/
+09:43:40: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+09:43:40: INFO:                              __/ |                          
+09:43:40: INFO:                             |___/ 
+
+
+
+09:43:40: INFO: TARGET SAID: 'star
+2019-4-1_9:43:40 <--> t_sector = 9664 and num_partition_sectors =0x140)'
+09:43:40: INFO: 
+
+
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+
+
+09:43:40: INFO:                         Issuing Erase                       
+2019-4-1_9:43:40 <--> 
+09:43:40: INFO:  _____              _               _____                   
+09:43:40: INFO: |_   _|            (_)             |  ___|                  
+09:43:40: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+09:43:40: INFO:   | 
+2019-4-1_9:43:40 <--> |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+09:43:40: INFO:  _| |\__ \__ \ |_| | | |
+2019-4-1_9:43:41 <-->  | | (_| | | |__| | | (_| \__ \  __/
+09:43:40: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+09:43:40: INFO:                              __/ |                          
+09:43:40: INFO:                             |___/ 
+
+
+
+09:4
+2019-4-1_9:43:41 <--> 3:40: INFO: TARGET SAID: 'start_sector = 9984 and num_partition_sectors =0x900)'
+09:43:40: INFO: 
+
+
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+
+
+09:43:40: INFO:                         Issuin
+2019-4-1_9:43:41 <--> g Erase                       
+09:43:40: INFO:  _____              _               _____                   
+09:43:40: INFO: |_   _|            (_)             |  ___|                  
+09:43:40: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ _
+2019-4-1_9:43:41 <--> __  ___ 
+09:43:40: INFO:   | |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+09:43:40: INFO:  _| |\__ \__ \ |_| | | | | | (_| | | |__| | | (_| \__ \  __/
+09:43:40: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+09:43:40: IN
+2019-4-1_9:43:41 <--> FO:                              __/ |                          
+09:43:40: INFO:                             |___/ 
+
+
+
+09:43:40: INFO: TARGET SAID: 'start_sector = 12288 and num_partition_sectors =0x900)'
+09:43:40: INFO: 
+
+
+09:43:40: INFO: ERASE S
+2019-4-1_9:43:41 <--> UCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+
+
+09:43:40: INFO:                         Issuing Erase                       
+09:43:40: INFO:  _____              _               _____                   
+09:43:40: INFO: |
+2019-4-1_9:43:41 <--> _   _|            (_)             |  ___|                  
+09:43:40: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+09:43:40: INFO:   | |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+09:43:40: INFO:  _| |\__ \__ \ |_| | | 
+2019-4-1_9:43:41 <--> | | | (_| | | |__| | | (_| \__ \  __/
+09:43:40: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+09:43:40: INFO:                              __/ |                          
+09:43:40: INFO:                             |___/ 
+
+
+
+09:
+2019-4-1_9:43:41 <--> 43:40: INFO: TARGET SAID: 'start_sector = 16192 and num_partition_sectors =0xe00)'
+09:43:40: INFO: 
+
+
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+09:43:40: INFO: ERASE SUCCESSFUL
+
+
+09:43:40: INFO:                         Issu
+2019-4-1_9:43:41 <--> ing Erase                       
+09:43:40: INFO:  _____              _               _____                   
+09:43:40: INFO: |_   _|            (_)             |  ___|                  
+09:43:40: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _
+2019-4-1_9:43:41 <-->  ___  ___ 
+09:43:40: INFO:   | |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+09:43:40: INFO:  _| |\__ \__ \ |_| | | | | | (_| | | |__| | | (_| \__ \  __/
+09:43:40: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+09:43:40: 
+2019-4-1_9:43:41 <--> INFO:                              __/ |                          
+09:43:40: INFO:                             |___/ 
+
+
+
+09:43:40: INFO: TARGET SAID: 'start_sector = 24000 and num_partition_sectors =0x3e00)'
+09:43:41: INFO: 
+
+
+09:43:41: INFO: ERAS
+2019-4-1_9:43:41 <--> E SUCCESSFUL
+09:43:41: INFO: ERASE SUCCESSFUL
+09:43:41: INFO: ERASE SUCCESSFUL
+
+
+09:43:41: INFO:                         Issuing Erase                       
+09:43:41: INFO:  _____              _               _____                   
+09:43:41: INFO
+2019-4-1_9:43:41 <--> : |_   _|            (_)             |  ___|                  
+09:43:41: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+09:43:41: INFO:   | |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+09:43:41: INFO:  _| |\__ \__ \ |_| |
+2019-4-1_9:43:41 <-->  | | | | (_| | | |__| | | (_| \__ \  __/
+09:43:41: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+09:43:41: INFO:                              __/ |                          
+09:43:41: INFO:                             |___/ 
+
+
+
+
+2019-4-1_9:43:41 <--> 09:43:41: INFO: TARGET SAID: 'start_sector = 40192 and num_partition_sectors =0x1e00)'
+09:43:41: INFO: 
+
+
+09:43:41: INFO: ERASE SUCCESSFUL
+09:43:41: INFO: ERASE SUCCESSFUL
+09:43:41: INFO: ERASE SUCCESSFUL
+
+
+09:43:41: INFO:                         
+2019-4-1_9:43:41 <--> Issuing Erase                       
+09:43:41: INFO:  _____              _               _____      
+2019-4-1_9:43:45 <-->              
+09:43:41: INFO: |_   _|            (_)             |  ___|                  
+09:43:41: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+09:43:41: INFO:   | |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+09:43:4
+2019-4-1_9:43:45 <--> 1: INFO:  _| |\__ \__ \ |_| | | | | | (_| | | |__| | | (_| \__ \  __/
+09:43:41: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+09:43:41: INFO:                              __/ |                          
+09:43:41: INFO:              
+2019-4-1_9:43:45 <-->                |___/ 
+
+
+
+09:43:41: INFO: TARGET SAID: 'start_sector = 47872 and num_partition_sectors =0x3800)'
+09:43:42: INFO: 
+
+
+09:43:42: INFO: ERASE SUCCESSFUL
+09:43:42: INFO: ERASE SUCCESSFUL
+09:43:42: INFO: ERASE SUCCESSFUL
+
+
+09:43:42: I
+2019-4-1_9:43:45 <--> NFO:                         Issuing Erase                       
+09:43:42: INFO:  _____              _               _____                   
+09:43:42: INFO: |_   _|            (_)             |  ___|                  
+09:43:42: INFO:   | | ___ ___ _  
+2019-4-1_9:43:45 <-->  _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+09:43:42: INFO:   | |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+09:43:42: INFO:  _| |\__ \__ \ |_| | | | | | (_| | | |__| | | (_| \__ \  __/
+09:43:42: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \___
+2019-4-1_9:43:45 <--> _/_|  \__,_|___/\___|
+09:43:42: INFO:                              __/ |                          
+09:43:42: INFO:                             |___/ 
+
+
+
+09:43:42: INFO: TARGET SAID: 'start_sector = 62208 and num_partition_sectors =0x3a00)'
+09:43:42:
+2019-4-1_9:43:45 <-->  INFO: 
+
+
+09:43:42: INFO: ERASE SUCCESSFUL
+09:43:42: INFO: ERASE SUCCESSFUL
+09:43:42: INFO: ERASE SUCCESSFUL
+
+
+09:43:42: INFO:                         Issuing Erase                       
+09:43:42: INFO:  _____              _               _____  
+2019-4-1_9:43:45 <-->                  
+09:43:42: INFO: |_   _|            (_)             |  ___|                  
+09:43:42: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+09:43:42: INFO:   | |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+09:
+2019-4-1_9:43:45 <--> 43:42: INFO:  _| |\__ \__ \ |_| | | | | | (_| | | |__| | | (_| \__ \  __/
+09:43:42: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+09:43:42: INFO:                              __/ |                          
+09:43:42: INFO:          
+2019-4-1_9:43:45 <-->                    |___/ 
+
+
+
+09:43:42: INFO: TARGET SAID: 'start_sector = 77056 and num_partition_sectors =0xd300)'
+
+09:43:43: INFO: TARGET SAID: 'Skipping:	bad block 0x600'
+
+09:43:43: INFO: TARGET SAID: 'Skipping:	bad block 0x601'
+09:43:44: INFO:
+2019-4-1_9:43:45 <-->  
+
+
+09:43:44: INFO: ERASE SUCCESSFUL
+09:43:44: INFO: ERASE SUCCESSFUL
+09:43:44: INFO: ERASE SUCCESSFUL
+
+
+09:43:44: INFO: In handleProgram('partition_complete_p4K_b256K.mbn')
+09:43:44: INFO: Looking for file 'partition_complete_p4K_b256K.mbn'
+09:4
+2019-4-1_9:43:45 <--> 3:44: INFO: =======================================================
+09:43:44: INFO: {<program> FILE: 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\partition_complete_p4K_b256K.mbn'}
+09:43:44: INFO: {<program> 
+2019-4-1_9:43:45 <--> (16.00 KB) 4 sectors needed at location 640 on LUN 0}
+09:43:44: INFO: =======================================================
+
+
+09:43:44: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:43:44: INFO: TARGET SAID: 'start_sector 640, last_sector_address 
+2019-4-1_9:43:45 <--> 644'
+
+09:43:44: INFO: FILE ACCESS SLOW!!   16.00 KB in  0.015 seconds (   1.04 MBps) --- Overall to target  0.010 seconds (1.56 MBps)
+09:43:44: INFO: {percent files transferred   0.01%}
+
+09:43:45: INFO: TARGET SAID: 'Finished sector address 640'
+09:4
+2019-4-1_9:43:45 <--> DL-Rawprogram( 0.01% ),  percent files transferred   0.01% 
+2019-4-1_9:43:45 <--> 3:45: INFO: 
+09:43:45: INFO: =======================================================
+09:43:45: INFO: ==================== {SUCCESS} ========================
+09:43:45: INFO: =======================================================
+
+
+09:43:45: INFO: {pe
+2019-4-1_9:43:45 <--> rcent files transferred   0.01%}
+09:43:45: INFO: In handleProgram('..\cefs.mbn')
+09:43:45: INFO: Looking for file '..\cefs.mbn'
+09:43:45: INFO: =======================================================
+09:43:45: INFO: {<program> FILE: 'D:\4_Firmware\EC20
+2019-4-1_9:43:45 <--> CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\cefs.mbn'}
+09:43:
+2019-4-1_9:43:45 <--> 45: INFO: {<program> (1.32 MB) 338 sectors needed at location 1280 on LUN 0}
+09:43:45: INFO: =======================================================
+
+
+09:43:45: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:43:45: INFO: TARGET SAID: 'start_sector 12
+2019-4-1_9:43:45 <--> 80, last_sector_address 1618'
+
+09:43:45: INFO: FILE ACCESS SLOW!!    1.32 MB in  0.015 seconds (  88.02 MBps) --- Overall to target  0.313 seconds (4.22 MBps)
+09:43:45: INFO: {percent files transferred   0.63%}
+
+09:43:45: INFO: TARGET SAID: 'Finished 
+2019-4-1_9:43:45 <--> DL-Rawprogram( 0.63% ),  percent files transferred   0.63% 
+2019-4-1_9:43:45 <--> sector address 1280'
+09:43:45: INFO: 
+09:43:45: INFO: =======================================================
+09:43:45: INFO: ==================== {SUCCESS} ========================
+09:43:45: INFO: ======================================================
+2019-4-1_9:43:45 <--> =
+
+
+09:43:45: INFO: {percent files transferred   0.63%}
+09:43:45: INFO: In handleProgram('..\tz.mbn')
+09:43:45: INFO: Looking for file '..\tz.mbn'
+09:43:45: INFO: =======================================================
+09:43:45: INFO: {<program> FIL
+2019-4-1_9:43:45 <--> E: 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\tz.mbn'}
+09:43:45: INFO: {<program> (538.71 KB) 135 sectors needed at location 8960 on LUN 0}
+09:43:45: INFO: ===============================================
+2019-4-1_9:43:45 <--> ========
+
+
+09:43:45: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:43:45: INFO: TARGET SAID: 'start_sector 8960, last_sector_address 9095'
+
+09:43:45: INFO: FILE ACCESS SLOW!!  540.00 KB in  0.015 seconds (  35.16 MBps) --- Overall to target  0.094 
+2019-4-1_9:43:45 <--> seconds (5.61 MBps)
+09:43:45: INFO: {percent files transferred   0.88%}
+
+09:43:45: INFO: TARGET SAID: 'Finished sector address 8960'
+09:43:45: INFO: 
+09:43:45: INFO: =======================================================
+09:43:45: INFO: ============
+2019-4-1_9:43:45 <--> DL-Rawprogram( 0.88% ),  percent files transferred   0.88% 
+2019-4-1_9:43:45 <--> ======== {SUCCESS} ========================
+09:43:45: INFO: =======================================================
+
+
+09:43:45: INFO: {percent files transferred   0.88%}
+09:43:45: INFO: In handleProgram('..\rpm.mbn')
+09:43:45: INFO: Looking for file 
+2019-4-1_9:43:45 <--> '..\rpm.mbn'
+09:43:45: INFO: =======================================================
+09:43:45: INFO: {<program> FILE: 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\rpm.mbn'}
+09:43:45: INFO: {<program> (154
+2019-4-1_9:43:45 <--> .25 KB) 39 sectors needed at location 9280 on LUN 0}
+09:43:45: INFO: =======================================================
+
+
+09:43:45: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:43:45: INFO: TARGET SAID: 'start_sector 9280, last_sector_address 
+2019-4-1_9:43:45 <--> 9319'
+
+09:43:45: INFO: FILE ACCESS SLOW!!  156.00 KB in  0.015 seconds (  10.16 MBps) --- Overall to target  0.031 seconds (4.91 MBps)
+09:43:45: INFO: {percent files transferred   0.95%}
+
+09:43:45: INFO: TARGET SAID: 'Finished sector address 9280'
+09
+2019-4-1_9:43:45 <--> DL-Rawprogram( 0.95% ),  percent files transferred   0.95% 
+2019-4-1_9:43:45 <--> :43:45: INFO: 
+09:43:45: INFO: =======================================================
+09:43:45: INFO: ==================== {SUCCESS} ========================
+09:43:45: INFO: =======================================================
+
+
+09:43:45: INFO: {
+2019-4-1_9:43:45 <--> percent files transferred   0.95%}
+09:43:45: INFO: In handleProgram('..\appsboot.mbn')
+09:43:45: INFO: Looking for file '..\appsboot.mbn'
+09:43:45: INFO: =======================================================
+09:43:45: INFO: {<program> FILE: 'D:\4_Fir
+2019-4-1_9:43:45 <--> mware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\appsboot.mbn'}
+09:43:45: INFO: {<program> (395.36 KB) 99 sectors needed at location 9664 on LUN 0}
+09:43:45: INFO: ======================================================
+2019-4-1_9:43:45 <--> =
+
+
+09:43:45: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:43:45: INFO: TARGET SAID: 'start_sector 9664, last_sector_address 9763'
+
+09:43:45: INFO: FILE ACCESS SLOW!!  396.00 KB in  0.015 seconds (  25.78 MBps) --- Overall to target  0.078 seconds
+2019-4-1_9:43:45 <-->  (4.96 MBps)
+09:43:45: INFO: {percent files transferred   1.13%}
+
+09:43:45: INFO: TARGET SAID: 'Finished sector address 9664'
+09:43:45: INFO: 
+09:43:45: INFO: =======================================================
+09:43:45: INFO: ===================
+2019-4-1_9:43:45 <--> DL-Rawprogram( 1.13% ),  percent files transferred   1.13% 
+2019-4-1_9:43:45 <--> = {SUCCESS} ========================
+09:43:45: INFO: ==============================
+2019-4-1_9:43:51 <--> =========================
+
+
+09:43:45: INFO: {percent files transferred   1.13%}
+09:43:45: INFO: In handleProgram('..\mdm9607-perf-boot.img')
+09:43:45: INFO: Looking for file '..\mdm9607-perf-boot.img'
+09:43:45: INFO: =================================
+2019-4-1_9:43:51 <--> ======================
+09:43:45: INFO: {<program> FILE: 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\mdm9607-perf-boot.img'}
+09:43:45: INFO: {<program> (5.60 MB) 1435 sectors needed at location 9984 on LUN
+2019-4-1_9:43:51 <-->  0}
+09:43:45: INFO: =======================================================
+
+
+09:43:45: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:43:45: INFO: TARGET SAID: 'start_sector 9984, last_sector_address 11419'
+
+09:43:46: INFO: Overall to target  0.98
+2019-4-1_9:43:51 <--> 5 seconds (5.69 MBps)
+09:43:46: INFO: {percent files transferred   3.78%}
+
+09:43:46: INFO: TARGET SAID: 'Finished sector address 9984'
+09:43:46: INFO: 
+09:43:46: INFO: =======================================================
+09:43:46: INFO: ==========
+2019-4-1_9:43:51 <--> DL-Rawprogram( 3.78% ),  percent files transferred   3.78% 
+2019-4-1_9:43:51 <--> ========== {SUCCESS} ========================
+09:43:46: INFO: =======================================================
+
+
+09:43:46: INFO: {percent files transferred   3.78%}
+09:43:46: INFO: In handleProgram('..\mdm9607-perf-boot.img')
+09:43:46: INFO: L
+2019-4-1_9:43:51 <--> ooking for file '..\mdm9607-perf-boot.img'
+09:43:46: INFO: =======================================================
+09:43:46: INFO: {<program> FILE: 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\mdm9607-perf
+2019-4-1_9:43:51 <--> -boot.img'}
+09:43:46: INFO: {<program> (5.60 MB) 1435 sectors needed at location 12288 on LUN 0}
+09:43:46: INFO: =======================================================
+
+
+09:43:46: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:43:46: INFO: TARGET S
+2019-4-1_9:43:51 <--> AID: 'start_sector 12288, last_sector_address 13723'
+
+09:43:47: INFO: Overall to target  0.969 seconds (5.78 MBps)
+09:43:47: INFO: {percent files transferred   6.42%}
+
+09:43:47: INFO: TARGET SAID: 'Finished sector address 12288'
+09:43:47: INFO: 
+09:
+2019-4-1_9:43:51 <--> DL-Rawprogram( 6.42% ),  percent files transferred   6.42% 
+2019-4-1_9:43:51 <--> 43:47: INFO: =======================================================
+09:43:47: INFO: ==================== {SUCCESS} ========================
+09:43:47: INFO: =======================================================
+
+
+09:43:47: INFO: {percent files trans
+2019-4-1_9:43:51 <--> ferred   6.42%}
+09:43:47: INFO: In handleProgram('..\mdm-perf-recovery-image-mdm9607-perf.ubi')
+09:43:47: INFO: Looking for file '..\mdm-perf-recovery-image-mdm9607-perf.ubi'
+09:43:47: INFO: =======================================================
+09:43
+2019-4-1_9:43:51 <--> :47: INFO: {<program> FILE: 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\mdm-perf-recovery-image-mdm9607-perf.ubi'}
+09:43:47: INFO: {<program> (10.50 MB) 2688 sectors needed at location 16192 on LUN 0}
+09:
+2019-4-1_9:43:51 <--> 43:47: INFO: =======================================================
+
+
+09:43:47: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:43:47: INFO: TARGET SAID: 'start_sector 16192, last_sector_address 18880'
+
+09:43:49: INFO: Overall to target  1.797 secon
+2019-4-1_9:43:51 <--> ds (5.84 MBps)
+09:43:49: INFO: {percent files transferred  11.38%}
+
+09:43:49: INFO: TARGET SAID: 'Finished sector address 16192'
+09:43:49: INFO: 
+09:43:49: INFO: =======================================================
+09:43:49: INFO: ================
+2019-4-1_9:43:51 <--> DL-Rawprogram( 11.38% ),  percent files transferred  11.38% 
+2019-4-1_9:43:51 <--> ==== {SUCCESS} ========================
+09:43:49: INFO: =======================================================
+
+
+09:43:49: INFO: {percent files transferred  11.38%}
+09:43:49: INFO: In handleProgram('..\NON-HLOS.ubi')
+09:43:49: INFO: Looking for file
+2019-4-1_9:43:51 <-->  '..\NON-HLOS.ubi'
+09:43:49: INFO: =======================================================
+09:43:49: INFO: {<program> FILE: 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\NON-HLOS.ubi'}
+09:43:49: INFO: {<pr
+2019-4-1_9:43:51 <--> ogram> (39.75 MB) 10176 sectors needed at location 24000 on LUN 0}
+09:43:49: INFO: =======================================================
+
+
+09:43:49: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:43:49: INFO: TARGET SAID: 'start_sector 24000, last_
+2019-4-1_9:43:51 <--> sector_address 34176'
+
+09:43:51: INFO: Overall to target  2.000 seconds (5.88 MBps)
+2019-4-1_9:44:9 <--> 
+09:43:51: INFO: {percent files transferred  16.94%}
+09:43:53: INFO: Overall to target  4.000 seconds (5.88 MBps)
+09:43:53: INFO: {percent files transferred  22.48%}
+09:43:55: INFO: Overall to target  6.000 seconds (5.85 MBps)
+09:43:55: INFO: {percent
+2019-4-1_9:44:9 <--> DL-Rawprogram( 16.94% ),  percent files transferred  16.94% 
+2019-4-1_9:44:9 <--> DL-Rawprogram( 22.48% ),  percent files transferred  22.48% 
+2019-4-1_9:44:9 <-->  files transferred  27.96%}
+09:43:56: INFO: Overall to target  6.813 seconds (5.83 MBps)
+09:43:56: INFO: {percent files transferred  30.15%}
+
+09:43:56: INFO: TARGET SAID: 'Finished sector address 24000'
+09:43:56: INFO: 
+09:43:56: INFO: ==============
+2019-4-1_9:44:9 <--> DL-Rawprogram( 30.15% ),  percent files transferred  30.15% 
+2019-4-1_9:44:9 <--> =========================================
+09:43:56: INFO: ==================== {SUCCESS} ========================
+09:43:56: INFO: =======================================================
+
+
+09:43:56: INFO: {percent files transferred  30.15%}
+09:43:56: 
+2019-4-1_9:44:9 <--> INFO: In handleProgram('..\mdm-perf-recovery-image-mdm9607-perf.ubi')
+09:43:56: INFO: Looking for file '..\mdm-perf-recovery-image-mdm9607-perf.ubi'
+09:43:56: INFO: =======================================================
+09:43:56: INFO: {<program> FILE:
+2019-4-1_9:44:9 <-->  'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\mdm-perf-recovery-image-mdm9607-perf.ubi'}
+09:43:56: INFO: {<program> (10.50 MB) 2688 sectors needed at location 40192 on LUN 0}
+09:43:56: INFO: ==============
+2019-4-1_9:44:9 <--> =========================================
+
+
+09:43:56: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:43:56: INFO: TARGET SAID: 'start_sector 40192, last_sector_address 42880'
+
+09:43:58: INFO: Overall to target  1.812 seconds (5.79 MBps)
+09:43:58: I
+2019-4-1_9:44:9 <--> NFO: {percent files transferred  35.10%}
+
+09:43:58: INFO: TARGET SAID: 'Finished sector address 40192'
+09:43:58: INFO: 
+09:43:58: INFO: =======================================================
+09:43:58: INFO: ==================== {SUCCESS} ============
+2019-4-1_9:44:9 <--> DL-Rawprogram( 35.10% ),  percent files transferred  35.10% 
+2019-4-1_9:44:9 <--> ============
+09:43:58: INFO: =======================================================
+
+
+09:43:58: INFO: {percent files transferred  35.10%}
+09:43:58: INFO: In handleProgram('..\NON-HLOS.ubi')
+09:43:58: INFO: Looking for file '..\NON-HLOS.ubi'
+09:43:5
+2019-4-1_9:44:9 <--> 8: INFO: =======================================================
+09:43:58: INFO: {<program> FILE: 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\NON-HLOS.ubi'}
+09:43:58: INFO: {<program> (39.75 MB) 10176 sec
+2019-4-1_9:44:9 <--> tors needed at location 47872 on LUN 0}
+09:43:58: INFO: =======================================================
+
+
+09:43:58: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:43:58: INFO: TARGET SAID: 'start_sector 47872, last_sector_address 58048'
+
+09
+2019-4-1_9:44:9 <--> :44:00: INFO: Overall to target  2.000 seconds (5.83 MBps)
+09:44:00: INFO: {percent files transferred  40.61%}
+09:44:02: INFO: Overall to target  4.000 seconds (5.84 MBps)
+09:44:02: INFO: {percent files transferred  46.13%}
+09:44:04: INFO: Overall to t
+2019-4-1_9:44:9 <--> DL-Rawprogram( 40.61% ),  percent files transferred  40.61% 
+2019-4-1_9:44:9 <--> DL-Rawprogram( 46.13% ),  percent files transferred  46.13% 
+2019-4-1_9:44:9 <--> arget  6.000 seconds (5.78 MBps)
+09:44:04: INFO: {percent files transferred  51.47%}
+09:44:05: INFO: Overall to target  6.875 seconds (5.78 MBps)
+09:44:05: INFO: {percent files transferred  53.87%}
+
+09:44:05: INFO: TARGET SAID: 'Finished sector addres
+2019-4-1_9:44:9 <--> DL-Rawprogram( 51.47% ),  percent files transferred  51.47% 
+2019-4-1_9:44:9 <--> DL-Rawprogram( 53.87% ),  percent files transferred  53.87% 
+2019-4-1_9:44:9 <--> s 47872'
+09:44:05: INFO: 
+09:44:05: INFO: =======================================================
+09:44:05: INFO: ==================== {SUCCESS} ========================
+09:44:05: INFO: =======================================================
+
+
+09:44
+2019-4-1_9:44:9 <--> :05: INFO: {percent files transferred  53.87%}
+09:44:05: INFO: In handleProgram('..\mdm9607-perf-sysfs.ubi')
+09:44:05: INFO: Looking for file '..\mdm9607-perf-sysfs.ubi'
+09:44:05: INFO: =======================================================
+09:44:05: 
+2019-4-1_9:44:9 <--> INFO: {<program> FILE: 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\mdm9607-perf-sysfs.ubi'}
+09:44:05: INFO: {<program> (48.75 MB) 12480 sectors needed at location 62208 on LUN 0}
+09:44:05: INFO: =========
+2019-4-1_9:44:9 <--> ==============================================
+
+
+09:44:05: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:44:05: INFO: TARGET SAID: 'start_sector 62208, last_sector_address 74688'
+
+09:44:07: INFO: Overall to target  2.000 seconds (5.64 MBps)
+09:44:
+2019-4-1_9:44:9 <--> 07: INFO: {percent files transferred  59.20%}
+09:44:09: INFO: Overall to target  4
+2019-4-1_9:44:9 <--> DL-Rawprogram( 59.20% ),  percent files transferred  59.20% 
+2019-4-1_9:44:22 <--> .000 seconds (5.75 MBps)
+09:44:09: INFO: {percent files transferred  64.74%}
+09:44:11: INFO: Overall to target  6.000 seconds (5.78 MBps)
+09:44:11: INFO: {percent files transferred  70.25%}
+09:44:13: INFO: Overall to target  8.000 seconds (5.80 MBps)
+
+2019-4-1_9:44:22 <--> DL-Rawprogram( 64.74% ),  percent files transferred  64.74% 
+2019-4-1_9:44:22 <--> DL-Rawprogram( 70.25% ),  percent files transferred  70.25% 
+2019-4-1_9:44:22 <--> 09:44:13: INFO: {percent files transferred  75.79%}
+09:44:13: INFO: Overall to target  8.391 seconds (5.81 MBps)
+09:44:13: INFO: {percent files transferred  76.89%}
+
+09:44:13: INFO: TARGET SAID: 'Finished sector address 62208'
+09:44:13: INFO: 
+09:44:
+2019-4-1_9:44:22 <--> DL-Rawprogram( 75.79% ),  percent files transferred  75.79% 
+2019-4-1_9:44:22 <--> DL-Rawprogram( 76.89% ),  percent files transferred  76.89% 
+2019-4-1_9:44:22 <--> 13: INFO: =======================================================
+09:44:13: INFO: ==================== {SUCCESS} ========================
+09:44:13: INFO: =======================================================
+
+
+09:44:13: INFO: {percent files transfer
+2019-4-1_9:44:22 <--> red  76.89%}
+09:44:13: INFO: In handleProgram('..\mdm9607-perf-sysfs.ubi')
+09:44:13: INFO: Looking for file '..\mdm9607-perf-sysfs.ubi'
+09:44:13: INFO: =======================================================
+09:44:13: INFO: {<program> FILE: 'D:\4_Firmw
+2019-4-1_9:44:22 <--> are\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\mdm9607-perf-sysfs.ubi'}
+09:44:13: INFO: {<program> (48.75 MB) 12480 sectors needed at location 77056 on LUN 0}
+09:44:13: INFO: ===========================================
+2019-4-1_9:44:22 <--> ============
+
+
+09:44:13: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:44:13: INFO: TARGET SAID: 'start_sector 77056, last_sector_address 89536'
+
+09:44:15: INFO: Overall to target  2.000 seconds (5.85 MBps)
+09:44:15: INFO: {percent files transferr
+2019-4-1_9:44:22 <--> ed  82.41%}
+09:44:17: INFO: Overall to target  4.000 seconds (5.86 MBps)
+09:44:17: INFO: {percent files transferred  87.95%}
+09:44:19: INFO: Overall to target  6.000 seconds (5.85 MBps)
+09:44:19: INFO: {percent files transferred  93.46%}
+09:44:21: INF
+2019-4-1_9:44:22 <--> DL-Rawprogram( 87.95% ),  percent files transferred  87.95% 
+2019-4-1_9:44:22 <--> DL-Rawprogram( 93.46% ),  percent files transferred  93.46% 
+2019-4-1_9:44:22 <--> O: Overall to target  8.000 seconds (5.86 MBps)
+09:44:21: INFO: {percent files transferred  99.03%}
+09:44:21: INFO: Overall to target  8.297 seconds (5.88 MBps)
+09:44:21: INFO: {percent files transferred  99.90%}
+
+09:44:21: INFO: TARGET SAID: 'Finishe
+2019-4-1_9:44:22 <--> DL-Rawprogram( 99.03% ),  percent files transferred  99.03% 
+2019-4-1_9:44:22 <--> DL-Rawprogram( 99.90% ),  percent files transferred  99.90% 
+2019-4-1_9:44:22 <--> d sector address 77056'
+09:44:21: INFO: 
+09:44:21: INFO: =======================================================
+09:44:21: INFO: ==================== {SUCCESS} ========================
+09:44:21: INFO: ===================================================
+2019-4-1_9:44:22 <--> ====
+
+
+09:44:21: INFO: {percent files transferred  99.90%}
+09:44:21: INFO: In handleProgram('..\sbl1.mbn')
+09:44:21: INFO: Looking for file '..\sbl1.mbn'
+09:44:21: INFO: =======================================================
+09:44:21: INFO: {<progr
+2019-4-1_9:44:22 <--> am> FILE: 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\sbl1.mbn'}
+09:44:21: INFO: {<program> (211.17 KB) 53 sectors needed at location 0 on LUN 0}
+09:44:21: INFO: ==========================================
+2019-4-1_9:44:22 <--> =============
+
+
+09:44:21: INFO: TARGET SAID: 'INSIDE HANDLE PROGRAM'
+
+09:44:21: INFO: TARGET SAID: 'start_sector 0, last_sector_address 53'
+
+09:44:22: INFO: FILE ACCESS SLOW!!  212.00 KB in  0.015 seconds (  13.80 MBps) --- Overall to target  0.047 
+2019-4-1_9:44:22 <--> seconds (4.40 MBps)
+09:44:22: INFO: {percent files transferred 100.00%}
+
+09:44:22: INFO: TARGET SAID: 'Finished sector address 0'
+09:44:22: INFO: 
+09:44:22: INFO: =======================================================
+09:44:22: INFO: ===============
+2019-4-1_9:44:22 <--> DL-Rawprogram( 100.00% ),  percent files transferred 100.00% 
+2019-4-1_9:44:22 <--> ===== {SUCCESS} ========================
+09:44:22: INFO: =======================================================
+
+
+09:44:22: INFO: {percent files transferred 100.00%}
+09:44:22: INFO: ==============================================================
+09:4
+2019-4-1_9:44:22 <--> 4:22: INFO: Files used and their paths
+09:44:22: INFO:   1 'D:\2_Code\QFlash_V4.11.1\Release\port_trace.txt'
+09:44:22: INFO:   2 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\rawprogram_nand_p4K_b256K_factory.
+2019-4-1_9:44:22 <--> xml'
+09:44:22: INFO:   3 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\partition_complete_p4K_b256K.mbn'
+09:44:22: INFO:   4 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\fi
+2019-4-1_9:44:22 <--> rehose\..\cefs.mbn'
+09:44:22: INFO:   5 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\tz.mbn'
+09:44:22: INFO:   6 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\.
+2019-4-1_9:44:22 <--> .\rpm.mbn'
+09:44:22: INFO:   7 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\appsboot.mbn'
+09:44:22: INFO:   8 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\m
+2019-4-1_9:44:22 <--> dm9607-perf-boot.img'
+09:44:22: INFO:   9 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\mdm-perf-recovery-image-mdm9607-perf.ubi'
+09:44:22: INFO:  10 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR0
+2019-4-1_9:44:22 <--> 6A08V05M4G_factory\update\firehose\..\NON-HLOS.ubi'
+09:44:22: INFO:  11 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory\EC20CEFAGR06A08V05M4G_factory\update\firehose\..\mdm9607-perf-sysfs.ubi'
+09:44:22: INFO:  12 'D:\4_Firmware\EC20CEFAGR06A08V05M4G_factory
+2019-4-1_9:44:22 <--> \EC20CEFAGR06A08V05M4G_factory\update\firehose\..\sbl1.mbn'
+
+09:44:22: INFO:      _             (done)
+09:44:22: INFO:     | |                 
+09:44:22: INFO:   __| | ___  _ __   ___ 
+09:44:22: INFO:  / _` |/ _ \| '_ \ / _ \
+09:44:22: INFO: | (_| | 
+2019-4-1_9:44:22 <--> (_) | | | |  __/
+09:44:22: INFO:  \__,_|\___/|_| |_|\___|
+09:44:22: INFO: {All Finished Successfully}
+
+09:44:22: INFO: Overall to target 42.062 seconds (5.04 MBps)
+09:44:22: INFO: {percent files transferred 100.00%}
+
+Writing log to 'D:\2_Code\QFlash
+2019-4-1_9:44:22 <--> DL-Rawprogram, wait for 1 seconds ......
+2019-4-1_9:44:23 <--> DL-Rawprogram, wait for 0 seconds ......
+2019-4-1_9:44:23 <--> FW download success.
