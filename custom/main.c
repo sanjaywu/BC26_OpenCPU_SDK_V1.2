@@ -41,11 +41,13 @@
 #include "ril_system.h"
 
 
+
+#define SERIAL_RX_BUFFER_LEN  2048
+static u8 m_RxBuf_Uart[SERIAL_RX_BUFFER_LEN];
+
 #define DBG_BUF_LEN   	1024
 #define APP_DEBUG_PORT  UART_PORT0
 static char DBG_BUFFER[DBG_BUF_LEN];
-#define SERIAL_RX_BUFFER_LEN  2048
-static u8 m_RxBuf_Uart[SERIAL_RX_BUFFER_LEN];
 
 #define APP_DEBUG(FORMAT,...) \
 {\
@@ -118,6 +120,7 @@ void proc_main_task(s32 taskId)
     // Register & open UART port
     Ql_UART_Register(APP_DEBUG_PORT, CallBack_UART_Hdlr, NULL);
     Ql_UART_Open(APP_DEBUG_PORT, 115200, FC_NONE);
+	
 	//register OneNET timer 
     Ql_Timer_Register(ONENET_TIMER_ID, Callback_Timer_OneNET, NULL);
     APP_DEBUG("BC26 OpenCPU OneNET Appcation\r\n");
@@ -319,43 +322,20 @@ static void CallBack_UART_Hdlr(Enum_SerialPort port, Enum_UARTEventType msg, boo
 	                {
 	                	APP_DEBUG ("%s\r\n", m_RxBuf_Uart);
 						
-	                	if (Ql_strstr(m_RxBuf_Uart, "Get SDK Version"))
-					    {	
-					        s32 ret;
-					        u8 tmpbuf[100];
-							
-					        Ql_memset(tmpbuf, 0, sizeof(tmpbuf));
-					        ret = Ql_GetSDKVer((u8*)tmpbuf, sizeof(tmpbuf));
-					        if(ret > 0)
-					        {
-					            APP_DEBUG("<--SDK Version:%s.-->\r\n", tmpbuf);
-					        }
-							else
-					        {
-					            APP_DEBUG("<--Get SDK Version Failure.-->\r\n");
-					        }
-					    }
-						else if (Ql_strstr(m_RxBuf_Uart, "AT"))
-						{
-							s32 ret;
-							char* pCh = NULL;
-							
-		                    pCh = Ql_strstr((char*)m_RxBuf_Uart, "\r\n");
-		                    if (pCh)
-		                    {
-		                        *(pCh + 0) = '\0';
-		                        *(pCh + 1) = '\0';
-		                    }
-		                    if (Ql_strlen((char*)m_RxBuf_Uart) == 0)
-		                    {
-		                        return;
-		                    }
-		                    ret = Ql_RIL_SendATCmd((char*)m_RxBuf_Uart, totalBytes, ATResponse_Handler, NULL, 0);
-						}
-						else
-						{
+						s32 ret;
+						char* pCh = NULL;
 
+						pCh = Ql_strstr((char*)m_RxBuf_Uart, "\r\n");
+						if (pCh)
+						{
+							*(pCh + 0) = '\0';
+							*(pCh + 1) = '\0';
 						}
+						if (Ql_strlen((char*)m_RxBuf_Uart) == 0)
+						{
+							return;
+						}
+						ret = Ql_RIL_SendATCmd((char*)m_RxBuf_Uart, totalBytes, ATResponse_Handler, NULL, 0);
 	                }
 	            }
 	            break;
